@@ -1,0 +1,102 @@
+body {
+  background: url('my-profit-tutor-8CL8KDg8oAs-unsplash.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+
+h1 {
+  color: #444;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+}
+
+.input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-btn:hover {
+  background: #218838;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.list li {
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.list li {
+  position: relative;
+  padding: 10px;
+  font-family: cursive;
+  border-top: 1px dotted darkgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list li .delete-btn {
+  color: rgb(36, 11, 11);
+  font-size: 18px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.list li:hover .delete-btn {
+  opacity: 1;
+}
+
+.list li .fa-trash {
+  color: rgb(30, 5, 5);
+  cursor: pointer;
+}
+
+.list li .fa-check {
+  color: green;
+  cursor: pointer;
+}
+
+.checked {
+  text-decoration: line-through;
+  color: gray;
+}
